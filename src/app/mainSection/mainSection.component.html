@@ -1,0 +1,19 @@
+<section
+  class="gap-2 flex flex-col w-full h-96 py-2 px-4 bg-slate-700 mt-20 text-white"
+>
+  <h3>{{ title }}</h3>
+  <div>
+    <input
+      placeholder="Add item..."
+      class="bg-slate-300 w-96 px-4 py-2 text-black rounded outline-none border-none"
+      [(ngModel)]="inputValue"
+    />
+    <button
+      class="bg-green-600 ml-2 w-20 px-4 py-2 text-black rounded outline-none border-none"
+      (click)="handleAdd()"
+    >
+      Add
+    </button>
+  </div>
+  <h5>{{ name }}</h5>
+</section>
